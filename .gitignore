@@ -14,8 +14,11 @@ dist
 #package-lock.json
 package-lock.json
 
-# misc
-.sass-cache
+# sass
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
 
 # Logs
 logs
