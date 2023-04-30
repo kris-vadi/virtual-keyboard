@@ -104,6 +104,15 @@ body {
   flex: 1 1 auto;
 }
 
+.textarea {
+  width: 670px;
+  height: 200px;
+  margin: 20px auto;
+  padding: 20px;
+  font-size: 1.7rem;
+  color: #2c2c2c;
+}
+
 .footer__wrapper {
   display: flex;
   justify-content: space-around;
