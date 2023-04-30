@@ -81,7 +81,8 @@ html {
 body {
   background: #f5f5f5;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  color: #969696;
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -107,10 +108,9 @@ body {
 .textarea {
   width: 670px;
   height: 200px;
-  margin: 20px auto;
   padding: 20px;
   font-size: 1.7rem;
-  color: #2c2c2c;
+  color: #5c5c5c;
 }
 
 .footer__wrapper {
