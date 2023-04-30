@@ -4,5 +4,9 @@ module.exports = {
     'import/extensions': [
       "off",
     ],
+  },
+  env: {
+    browser: true,
+    node: true,
   }
 };

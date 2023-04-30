@@ -1,3 +1,5 @@
+import createKeyboard from "./keyboard.js";
+
 export default function createMain() {
   const main = document.createElement('main');
   const wrapper = document.createElement('div');
@@ -10,14 +12,15 @@ export default function createMain() {
   wrapper.classList.add('wrapper');
   textarea.classList.add('textarea');
   description.classList.add('description');
-  
+
   textWin.innerText = 'Cоздана в Windows';
-  textLng.innerText = 'Переключение языка: Левый Alt + Левый Shift';
+  textLng.innerText = 'Переключение языка: (левый) Alt + (левый) Shift';
   description.appendChild(textWin);
   description.appendChild(textLng);
 
   main.appendChild(wrapper);
   wrapper.appendChild(textarea);
+  wrapper.appendChild(createKeyboard());
   wrapper.appendChild(description);
 
   return main;

@@ -113,6 +113,10 @@ body {
   color: #5c5c5c;
 }
 
+.description {
+  margin: 20px 0;
+}
+
 .footer__wrapper {
   display: flex;
   justify-content: space-around;
