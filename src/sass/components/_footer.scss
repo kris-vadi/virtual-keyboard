@@ -1,0 +1,21 @@
+.footer__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: $color-light;
+  background-color: $color-primary;
+  padding: 20px;
+}
+
+.footer__rss-link {
+  width: 121px;
+  background-image: url(../assets/svg/rss.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 45px;
+}
+
+.footer__github-link {
+  color: $color-light;
+}
+
