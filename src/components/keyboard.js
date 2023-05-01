@@ -99,7 +99,7 @@ export default function createKeyboard() {
     }
   };
 
-  window.addEventListener('keydown', (event) => {
+  document.addEventListener('keydown', (event) => {
     const pressButton = document.querySelector(`.${event.code}`);
 
     pressButton.classList.add('key-active');
@@ -111,7 +111,7 @@ export default function createKeyboard() {
     clickKey(event.code);
   });
 
-  window.addEventListener('keyup', (event) => {
+  document.addEventListener('keyup', (event) => {
     document.querySelectorAll('.key').forEach((el) => el.classList.remove('key-active'));
 
     upShift(event.code);
