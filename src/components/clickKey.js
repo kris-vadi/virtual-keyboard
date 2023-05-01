@@ -14,7 +14,7 @@ export default function clickKey(keyCode) {
       text.setRangeText('', text.selectionStart, text.selectionEnd + 1);
       break;
     case 'Backspace':
-      text.setRangeText('', text.selectionStart - 1, text.selectionEnd);
+      text.setRangeText('', text.selectionStart > 0 ? text.selectionStart - 1 : 0, text.selectionEnd);
       break;
     case 'Enter':
       text.setRangeText('\n', text.selectionStart, text.selectionEnd, 'end');
