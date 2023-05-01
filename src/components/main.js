@@ -1,4 +1,4 @@
-import createKeyboard from "./keyboard.js";
+import createKeyboard from './keyboard.js';
 
 export default function createMain() {
   const main = document.createElement('main');
