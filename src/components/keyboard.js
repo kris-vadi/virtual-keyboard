@@ -6,8 +6,8 @@ export default function createKeyboard() {
   const keyboard = document.createElement('div');
   let flagLang = false;
   let lang = 'eng';
-  const capsLookPressed = false;
-  const upperCase = false;
+  let capsLookPressed = false;
+  let upperCase = false;
 
   keyboard.classList.add('keyboard');
 
@@ -25,21 +25,9 @@ export default function createKeyboard() {
 
     pressButton.classList.add('key-active');
 
-    event.preventDefault();
-
-    if (event.code === 'AltLeft') {
-      flagLang = true;
-    }
-    if (event.code === 'ShiftLeft' && flagLang === true) {
-      flagLang = false;
-      if (lang === 'eng') {
-        lang = 'ru';
-      } else {
-        lang = 'eng';
-      }
-      fillButtons(keyboard, lang, capsLookPressed);
-    }
-
+    event.preventDefault();    
+    changeLang(event.code);
+    pressCaps(event.code);
     clickKey(event.code);
   });
 
@@ -52,7 +40,8 @@ export default function createKeyboard() {
       const pressButton = document.querySelector(`.${event.target.classList[1]}`);
 
       pressButton.classList.add('key-active');
-
+      
+      pressCaps(pressButton.classList[1]);
       clickKey(pressButton.classList[1]);
     }
   });
@@ -64,6 +53,31 @@ export default function createKeyboard() {
       pressButton.classList.remove('key-active');
     }
   });
+
+  const changeLang = (k) => {
+    if (k === 'AltLeft') {
+      flagLang = true;
+    }
+    if (k === 'ShiftLeft' && flagLang === true) {
+      flagLang = false;
+      if (lang === 'eng') {
+        lang = 'ru';
+      } else {
+        lang = 'eng';
+      }
+      fillButtons(keyboard, lang, capsLookPressed);
+    }
+  }
+
+  const pressCaps = (k) => {
+    if (k === 'CapsLock') {
+      if (capsLookPressed === true) {
+        capsLookPressed = false; 
+      } else { capsLookPressed = true; }
+
+      fillButtons(keyboard, lang, capsLookPressed);
+    }
+  }
 
   return keyboard;
 }
