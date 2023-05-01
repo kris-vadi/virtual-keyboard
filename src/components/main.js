@@ -23,5 +23,9 @@ export default function createMain() {
   wrapper.appendChild(createKeyboard());
   wrapper.appendChild(description);
 
+  textarea.addEventListener('blur', (event) => {
+    event.target.focus();
+  });
+
   return main;
 }

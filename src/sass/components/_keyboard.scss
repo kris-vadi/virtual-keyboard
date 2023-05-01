@@ -12,31 +12,29 @@
   color: $color-textarea;
   border-radius: 3px;
   box-shadow: $key-shadow;
-  &:hover {
-    background-color: lighten($color-background, 3%);
-  }
 }
 
 .key-active {
   box-shadow: $press-shadow;
 }
 
-.backspace,
-.enter,
-.shiftright {
+.Backspace,
+.Enter,
+.ShiftRight {
   grid-column: span 3;
 }
 
-.tab,
-.shiftleft,
-.capslock,
-.altright,
-.altleft,
-.controlright,
-.controlleft {
+.Tab,
+.Delete,
+.ShiftLeft,
+.CapsLock,
+.AltRight,
+.AltLeft,
+.ControlRight,
+.ControlLeft {
   grid-column: span 2;
 }
 
-.space {
+.Space {
   grid-column: span 5;
 }

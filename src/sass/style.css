@@ -127,31 +127,29 @@ body {
   border-radius: 3px;
   box-shadow: -1px -1px 2px #e8e5e5, 1px 1px 2px #c2c2c2;
 }
-.key:hover {
-  background-color: #fdfdfd;
-}
 
 .key-active {
   box-shadow: inset -1px -1px 2px #e8e5e5, inset 1px 1px 2px #c2c2c2;
 }
 
-.backspace,
-.enter,
-.shiftright {
+.Backspace,
+.Enter,
+.ShiftRight {
   grid-column: span 3;
 }
 
-.tab,
-.shiftleft,
-.capslock,
-.altright,
-.altleft,
-.controlright,
-.controlleft {
+.Tab,
+.Delete,
+.ShiftLeft,
+.CapsLock,
+.AltRight,
+.AltLeft,
+.ControlRight,
+.ControlLeft {
   grid-column: span 2;
 }
 
-.space {
+.Space {
   grid-column: span 5;
 }
 
