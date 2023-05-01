@@ -6,10 +6,14 @@ export default function fillButtons(keyboard, lang, capsLookPressed) {
     const [a, b, c, d] = keys[key];
 
     if (lang === 'eng') {
-      (capsLookPressed) ? keyButton.innerHTML = c : keyButton.innerHTML = a;
+      if (capsLookPressed) {
+        keyButton.innerHTML = c;
+      } else { keyButton.innerHTML = a; }
     }
     if (lang === 'ru') {
-      (capsLookPressed) ? keyButton.innerHTML = d : keyButton.innerHTML = b;
+      if (capsLookPressed) {
+        keyButton.innerHTML = d;
+      } else { keyButton.innerHTML = b; }
     }
   });
 }
