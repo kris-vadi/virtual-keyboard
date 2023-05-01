@@ -5,8 +5,8 @@ import fillButtons from './fillButtons.js';
 export default function createKeyboard() {
   const keyboard = document.createElement('div');
   let flagLang = false;
-  let lang = 'eng';
   let capsLookPressed = false;
+  let lang = 'eng';
   let upperCase = false;
 
   keyboard.classList.add('keyboard');
