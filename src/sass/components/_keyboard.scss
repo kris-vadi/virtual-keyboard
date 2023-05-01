@@ -1,0 +1,42 @@
+.keyboard {
+  display: grid;  
+  justify-content: center;
+  align-content: center;
+  grid-template: repeat(5, 40px) / repeat(16, 40px);
+  gap: 3px;
+  margin: 20px 0;
+}
+
+.key {
+  background-color: $color-background;
+  color: $color-textarea;
+  border-radius: 3px;
+  box-shadow: $key-shadow;
+  &:hover {
+    background-color: lighten($color-background, 3%);
+  }
+}
+
+.key-active {
+  box-shadow: $press-shadow;
+}
+
+.backspace,
+.enter,
+.shiftright {
+  grid-column: span 3;
+}
+
+.tab,
+.shiftleft,
+.capslock,
+.altright,
+.altleft,
+.controlright,
+.controlleft {
+  grid-column: span 2;
+}
+
+.space {
+  grid-column: span 5;
+}

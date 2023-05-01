@@ -95,10 +95,9 @@ body {
 }
 
 .header__title {
-  font-size: 30px;
-  font-weight: 700;
+  font-size: 2.5rem;
   color: #8fa995;
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
 .main {
@@ -113,8 +112,53 @@ body {
   color: #5c5c5c;
 }
 
+.keyboard {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template: repeat(5, 40px)/repeat(16, 40px);
+  gap: 3px;
+  margin: 20px 0;
+}
+
+.key {
+  background-color: #f5f5f5;
+  color: #5c5c5c;
+  border-radius: 3px;
+  box-shadow: -1px -1px 2px #e8e5e5, 1px 1px 2px #c2c2c2;
+}
+.key:hover {
+  background-color: #fdfdfd;
+}
+
+.key-active {
+  box-shadow: inset -1px -1px 2px #e8e5e5, inset 1px 1px 2px #c2c2c2;
+}
+
+.backspace,
+.enter,
+.shiftright {
+  grid-column: span 3;
+}
+
+.tab,
+.shiftleft,
+.capslock,
+.altright,
+.altleft,
+.controlright,
+.controlleft {
+  grid-column: span 2;
+}
+
+.space {
+  grid-column: span 5;
+}
+
 .description {
   margin: 20px 0;
+  font-size: 1.5rem;
+  line-height: 1.5;
 }
 
 .footer__wrapper {
@@ -123,7 +167,7 @@ body {
   align-items: center;
   color: #ffffff;
   background-color: #8fa995;
-  padding: 20px;
+  padding: 10px;
 }
 
 .footer__rss-link {

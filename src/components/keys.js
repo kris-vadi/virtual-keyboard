@@ -27,9 +27,10 @@ const keys = {
   KeyP: ['p', 'P', 'з', 'З'],
   BracketLeft: ['[', '{', 'х', 'Х'],
   BracketRight: [']', '}', 'ъ', 'Ъ'],
+  Backslash: ['\\', '|', '\\', '/'],
   Delete: ['Del', 'Del', 'Del', 'Del'],
 
-  CapsLock: ['CAPS', 'CAPS', 'CAPS', 'CAPS'],
+  CapsLock: ['caps lock', 'caps lock', 'caps lock', 'caps lock'],
   KeyA: ['a', 'A', 'ф', 'Ф'],
   KeyS: ['s', 'S', 'ы', 'Ы'],
   KeyD: ['d', 'D', 'в', 'В'],
