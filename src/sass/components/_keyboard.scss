@@ -1,0 +1,40 @@
+.keyboard {
+  display: grid;  
+  justify-content: center;
+  align-content: center;
+  grid-template: repeat(5, 40px) / repeat(16, 40px);
+  gap: 3px;
+  margin: 20px 0;
+}
+
+.key {
+  background-color: $color-background;
+  color: $color-textarea;
+  border-radius: 3px;
+  box-shadow: $key-shadow;
+}
+
+.key-active {
+  box-shadow: $press-shadow;
+}
+
+.Backspace,
+.Enter,
+.ShiftRight {
+  grid-column: span 3;
+}
+
+.Tab,
+.Delete,
+.ShiftLeft,
+.CapsLock,
+.AltRight,
+.AltLeft,
+.ControlRight,
+.ControlLeft {
+  grid-column: span 2;
+}
+
+.Space {
+  grid-column: span 5;
+}

@@ -1,0 +1,31 @@
+# Dependency directories
+node_modules/
+dist
+.Ds_Store
+.idea
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+#package-lock.json
+package-lock.json
+
+# sass
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Optional eslint cache
+.eslintcache
